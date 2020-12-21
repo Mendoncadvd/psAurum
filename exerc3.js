@@ -1,7 +1,6 @@
 const dicionario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
     'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 ];
-
 const somatorioLetras = (sequencia1, sequencia2) => {
     let ordenada1 = sequencia1.split('').sort().join();
     let ordenada2 = sequencia2.split('').sort().join();

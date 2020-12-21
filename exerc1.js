@@ -14,5 +14,4 @@ const removeRepetido = (sequencia, limite) => {
     }
     return sequenciaNova
 }
-
 console.log(removeRepetido("xxxyzzaaayy", 2));
