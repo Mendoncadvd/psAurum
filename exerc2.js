@@ -7,11 +7,10 @@ const removeChar = (sequencia, multiplicador) => {
         } else {
             if (sequencia[i - 1] == undefined) {
                 let temp = sequencia;
-                let recebeTemp = temp.split("?")
-                let junta = recebeTemp.join('');
+                let recebeTemp = temp.split("?").join('');
                 let charMulti = "";
                 for (let k = 0; k < multiplicador; k++) {
-                    charMulti += junta[junta.length - 1]
+                    charMulti += recebeTemp[recebeTemp.length - 1]
                 }
                 sequenciaNova += charMulti
             } else {
@@ -25,4 +24,4 @@ const removeChar = (sequencia, multiplicador) => {
     }
     return sequenciaNova;
 }
-console.log(removeChar("?x?yzza?y?", 4))
+console.log(removeChar("?x?yzza?y?", 5))
